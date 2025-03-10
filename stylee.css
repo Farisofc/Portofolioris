@@ -1,333 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0d1f2d;
-    color: white;
-    text-align: center;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
-.navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background-color: #1a1a2e;
-    position: fixed;
-    top: 0;
-    z-index: 10;
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  transition: 0.3s;
 }
 
-.navbar .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #00ffcc;
+.container:hover {
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.3);
 }
 
-.navbar .menu a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 18px;
-    transition: color 0.3s;
+header {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-.navbar .menu a:hover {
-    color: #00ffcc;
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.hero {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    text-align: center;
-    padding: 20px;
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #ffcc00;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+  transition: transform 0.3s;
 }
 
-.hero h1 {
-    font-size: 50px;
-    color: white;
-    margin-bottom: 20px;
+.profile img:hover {
+  transform: scale(1.1);
 }
 
-.hero p {
-    font-size: 22px;
-    color: #b0b0b0;
-    margin-bottom: 30px;
+.profile h2 {
+  margin-top: 10px;
+  font-size: 22px;
 }
 
-.start-btn {
-    background-color: #00ffcc;
-    color: #1e1e1e;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+.profile p {
+  font-size: 16px;
+  opacity: 0.7;
 }
 
-.start-btn:hover {
-    background-color: #009c8a;
+.data-diri {
+  margin-top: 20px;
 }
 
-.about {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #162447;
+.data-diri h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-.about h3 {
-    font-size: 28px;
-    color: #00ffcc;
-    margin-bottom: 10px;
+table {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  transition: 0.3s;
 }
 
-.about p {
-    font-size: 18px;
-    color: #d3d3d3;
-    line-height: 1.6;
+table:hover {
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
 }
 
-.chat-container {
-    width: 100%;
-    height: 100vh;
-    background: white;
-    display: flex;
-    flex-direction: column;
+td {
+  padding: 8px;
+  text-align: left;
+  font-size: 16px;
 }
 
-.chat-header {
-    background: #075e54;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    position: fixed;
-    top: 0;
-    width: 100%;
+td:first-child {
+  font-weight: bold;
+  color: #ffcc00;
 }
 
-.chat-header-left {
-    font-size: 22px;
+.music-container {
+  margin-top: 20px;
 }
 
-.chat-header-right {
-    display: flex;
-    align-items: center;
+.music-container button {
+  padding: 10px 20px;
+  border: none;
+  background: #ffcc00;
+  color: #222;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: 0.3s;
 }
 
-.luminai-text {
-    font-size: 20px;
-    font-weight: bold;
-    color: #00ffcc;
-    margin-right: 15px;
+.music-container button:hover {
+  background: #ffd700;
+  transform: scale(1.1);
+}
+
+.socials {
+  margin-top: 30px;
+}
+
+.socials h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.social-table {
+  display: flex;
+  justify-content: center;
+}
+
+.social-table table {
+  width: 100%;
+}
+
+.social-table img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-table img:hover {
+  transform: scale(1.2);
+}
+
+.social-table a {
+  text-decoration: none;
+  color: #ffcc00;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.social-table a:hover {
+  color: #ffd700;
+}
+
+/* Navigasi di tengah */
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffcc00;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background: rgba(255, 204, 0, 0.2);
+  color: #ffd700;
 }
 
 
-.chat-nav {
-    display: flex;
-    gap: 15px;
+/* Tombol Musik & Website AI */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
 }
 
-.chat-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
+.button-container button {
+  padding: 10px 20px;
+  border: none;
+  background: #ffcc00;
+  color: #222;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: 0.3s;
 }
 
-.chat-nav a:hover {
-    color: #00ffcc;
-}
-
-#chat-box {
-    flex: 1;
-    padding: 10px;
-    margin-top: 50px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    background: white;
-}
-
-.message {
-    max-width: 75%;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 8px;
-    word-wrap: break-word;
-    font-size: 14px;
-}
-
-.user-message {
-    align-self: flex-end;
-    background: #dcf8c6;
-    color: #000;
-}
-
-.ai-message {
-    align-self: flex-start;
-    background: #ffffff; 
-    color: #333; 
-    border: 1px solid #ddd;
-}
-
-.chat-input {
-    display: flex;
-    padding: 10px;
-    background: #f0f0f0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.chat-input input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    outline: none;
-}
-
-.chat-input button {
-    padding: 10px;
-    margin-left: 5px;
-    border: none;
-    background: #128c7e;
-    color: white;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.chat-input button:hover {
-    background: #075e54;
-}
-
-/* Menu Titik Tiga */
-.menu-btn {
-    font-size: 22px;
-    color: white;
-    cursor: pointer;
-}
-
-.menu-btn:hover {
-    color: #00ffcc;
-}
-
-/* Footer */
-footer {
-    background: #1a1a2e;
-    padding: 20px;
-    font-size: 16px;
-    color: #b0b0b0;
-}
-
-.chat-header {
-    background: #007bff;
-    color: white;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-}
-
-.chat-header-left {
-    display: flex;
-    align-items: center;
-}
-
-.luminai-text {
-    font-size: 20px;
-    color: #00ffcc;
-    margin-left: 10px;
-}
-
-.hamburger-menu {
-    cursor: pointer;
-    font-size: 24px;
-    color: white;
-    margin-left: 15px;
-}
-
-.hamburger-menu:hover {
-    color: #00ffcc;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 15px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    width: 150px;
-    z-index: 100;
-}
-
-.dropdown-menu a {
-    display: block;
-    padding: 12px;
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background 0.3s ease;
-}
-
-.dropdown-menu a:hover {
-    background: #f0f0f0;
-}
-
-.dropdown-active {
-    display: block;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 200;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-}
-
-/* Kontrol Audio */
-.message audio {
-    max-width: 100%;
-    margin: 10px 0;
-    border-radius: 5px;
-}
-
-/* **Profile Picture** */
-.profile-pic {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    border: 2px solid white;
+.button-container button:hover {
+  background: #ffd700;
+  transform: scale(1.1);
 }
