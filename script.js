@@ -11,9 +11,9 @@ function toggleMusic() {
     }
 
     function visitAI() {
-      window.open("https://websiteai.com", "_blank"); // Ganti dengan URL website AI kamu
+      window.open("https://aitechh.my.id", "_blank"); // Ganti dengan URL website AI kamu
     }
     
     function visitApI() {
-        window.open("https://faris.biz.id")
+        window.open("https://faris-apii.biz.id")
     }
