@@ -13,3 +13,7 @@ function toggleMusic() {
     function visitAI() {
       window.open("https://websiteai.com", "_blank"); // Ganti dengan URL website AI kamu
     }
+    
+    function visitApI() {
+        window.open("https://faris.biz.id")
+    }
