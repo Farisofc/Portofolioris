@@ -15,5 +15,5 @@ function toggleMusic() {
     }
     
     function visitApI() {
-        window.open("https://faris.biz.id")
+        window.open("https://faris-apii.biz.id", "_blank")
     }
